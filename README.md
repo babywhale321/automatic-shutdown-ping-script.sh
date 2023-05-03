@@ -21,3 +21,7 @@ Last chance stage
 4, If all 3 stages has failed then the script will initiate a shutdown command
 
 4.1, It will ping all 3 ipv4 addresses 10 seconds before the system shutdown and if its successful then go back to step 1 in 60 seconds
+
+# How to use
+
+You can create a service that starts the script at system boot
