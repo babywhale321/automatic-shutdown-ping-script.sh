@@ -2,7 +2,7 @@
 
 Stage 1
 
-1, Will try to ping every 60 seconds to Quad9 DNS service
+1, Will try to ping every 60 seconds to Quad9 DNS service 9.9.9.9
 
 Stage 2
 
