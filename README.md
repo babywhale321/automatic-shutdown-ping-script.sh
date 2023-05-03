@@ -1,5 +1,9 @@
 # Steps in script
 
+Stage 0
+
+Creates a log file under automatic-shutdown-ping-script.log in the directory that the main script is running
+
 Stage 1
 
 1, Will try to ping every 60 seconds to Quad9 DNS service 9.9.9.9
