@@ -2,7 +2,7 @@
 
 Stage 0
 
-Creates a log file under automatic-shutdown-ping-script.log in the directory that the main script is running
+Creates a log file under  internet-monitor.log in the directory that the main script is running
 
 Stage 1
 
