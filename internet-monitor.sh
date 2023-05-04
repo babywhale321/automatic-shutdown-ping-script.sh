@@ -10,7 +10,7 @@ fi
 while true; do
 
 #---First-stage-ping---
-  ping -c 3 9.9.9.9 >/dev/null
+  ping -c 3 9.9.9.9
   if [ $? -eq 0 ]; then
     #sleep x amount before pinging again
     sleep 60
@@ -22,7 +22,7 @@ while true; do
     sleep 60
 
 #---Second-stage-ping---
-    ping -c 3 1.1.1.1 >/dev/null
+    ping -c 3 1.1.1.1
     if [ $? -eq 0 ]; then
         #sleep x amount before pinging again
         sleep 60
@@ -34,7 +34,7 @@ while true; do
         sleep 60
 
 #---Third-stage-ping---
-        ping -c 3 8.8.8.8 >/dev/null
+        ping -c 3 8.8.8.8
         if [ $? -eq 0 ]; then
             #sleep x amount before pinging again
             sleep 60
@@ -47,7 +47,7 @@ while true; do
         sleep 50
 
 #---Last-chance-ping---
-            ping -c 3 9.9.9.9 >/dev/null && ping -c 3 8.8.8.8 >/dev/null && ping -c 3 1.1.1.1 >/dev/null
+            ping -c 3 9.9.9.9 && ping -c 3 8.8.8.8 && ping -c 3 1.1.1.1
             if [ $? -eq 0 ]; then
             echo "ping was successfull 10 seconds before system shutdown, Continueing the script on $(date)" | tee -a $LOG_FILE
             shutdown -c
