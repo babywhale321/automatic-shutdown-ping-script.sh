@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Log file location
-LOG_FILE=automatic-shutdown-ping-script.log
+LOG_FILE=internet-monitor.log
 
 if ! test -e $LOG_FILE; then
   touch $LOG_FILE
