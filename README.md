@@ -1,26 +1,24 @@
 # Steps in script
 
-Stage 0
+## Stage 0
 
 Creates a log file under  internet-monitor.log in the directory that the main script is running
 
-Stage 1
+## Stage 1
 
 1, Will try to ping every 60 seconds to Quad9 DNS service 9.9.9.9
 
-Stage 2
+## Stage 2
 
 2, If step 1 has failed it will wait another 60 seconds and then ping Cloudflare DNS service 1.1.1.1
 
 2.1, If this ping is successful then it will go back to step 1 in 60 seconds
 
-Stage 3
+## Stage 3
 
 3, If Step 2 has failed it will wait another 60 seconds and then ping Google DNS service 8.8.8.8
 
 3.1, If this ping is successful then it will go back to step 1 in 60 seconds
-
-Last chance stage
 
 ## ( Linux )
 
